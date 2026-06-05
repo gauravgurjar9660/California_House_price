@@ -32,10 +32,10 @@ with col1:
     longitude=st.number_input("longitude",min_value=-124.35,max_value=-114.31)
     housing_median_age=st.number_input("Enter house age",max_value=70,min_value=1)
 with col2:
-    total_rooms=st.number_input("Total Rooms")
-    total_bedrooms=st.number_input("Total Bedrooms")
-    population=st.number_input("Total Population in area")
-    households=st.number_input("Enter number of Households")
+    total_rooms=st.number_input("Total Rooms",value=500)
+    total_bedrooms=st.number_input("Total Bedrooms",value=700)
+    population=st.number_input("Total Population in area",value=800)
+    households=st.number_input("Enter number of Households",value=970)
 median_income=st.slider("Enter median income",0.0,15.0,7.2574)
 
 if st.button("SUBMIT"):
